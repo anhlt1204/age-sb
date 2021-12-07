@@ -42,6 +42,8 @@ public class CheckService {
         while (countT < 3) {
             if (count >= 2) {
                 checkAge = true;
+            } else {
+                continue;
             }
         }
         countT = 0;

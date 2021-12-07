@@ -22,7 +22,7 @@ public class Mom extends Thread {
         System.out.println("m start");
         lock.lock();
         try {
-            sleep(2000);
+            sleep(1);
             if (checkAge(readFile())) {
                 CheckService.count++;
                 if (CheckService.count >= 2) {

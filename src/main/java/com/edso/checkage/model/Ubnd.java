@@ -24,7 +24,7 @@ public class Ubnd extends Thread{
         System.out.println("u start");
         lock.lock();
         try {
-            sleep(5000);
+            sleep(1);
             if (checkAge(readFile())) {
                 CheckService.count++;
                 if (CheckService.count >= 2) {

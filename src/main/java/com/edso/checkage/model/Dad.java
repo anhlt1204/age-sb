@@ -20,7 +20,7 @@ public class Dad extends Thread{
         System.out.println("d start");
         lock.lock();
         try {
-            sleep(1000);
+            sleep(5000);
             if (checkAge(readFile())) {
                 CheckService.count++;
                 if (CheckService.count >= 2) {
